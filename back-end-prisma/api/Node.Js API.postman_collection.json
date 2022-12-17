@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "bc2c1efc-cdb7-4948-9246-11075b19e1e2",
+		"name": "Node.Js API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13629750"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ROOT_PATH}}",
+					"host": [
+						"{{ROOT_PATH}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Daniel\",\r\n    \"email\": \"danimarvarisa@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ROOT_PATH}}/usuarios",
+					"host": [
+						"{{ROOT_PATH}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Usuário",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Usuários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ROOT_PATH}}/usuarios",
+					"host": [
+						"{{ROOT_PATH}}"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encontrar pela chave",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ROOT_PATH}}/usuarios/1",
+					"host": [
+						"{{ROOT_PATH}}"
+					],
+					"path": [
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Usuário",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
